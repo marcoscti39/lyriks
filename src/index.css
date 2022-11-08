@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.music-playing {
+  animation: spin 2000ms infinite linear;
+}
+
+.loader {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: #12127f solid 15px;
+  border-top: #150f2a solid 15px;
+  margin: 0 auto;
+  animation: loader-spinner 1500ms infinite ease-in-out;
+}
+
+@keyframes loader-spinner {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
