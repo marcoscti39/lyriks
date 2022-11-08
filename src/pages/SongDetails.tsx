@@ -63,16 +63,16 @@ const Song = () => {
             <section className="pb-[3rem]">
               <h2 className="text-3xl font-semibold mb-4">Lyrics:</h2>
 
-              <p className="text-light-gray text-lg">
+              <div className="text-light-gray text-lg">
                 {lyrics?.map((line, index) => (
-                  <span
+                  <p
                     key={index}
                     className={`${line.length === 0 ? "my-4" : "my-0"}`}
                   >
                     {line}
-                  </span>
+                  </p>
                 ))}
-              </p>
+              </div>
             </section>
 
             <section>
