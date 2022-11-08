@@ -1,7 +1,6 @@
 import React from "react";
 import { useLyriksData } from "../stateManagement/store";
 import { useParams } from "react-router-dom";
-import { fetchSongLyrics } from "../api/fetchSongLyrics";
 import { fetchSongDetails } from "../api/fetchSongDetails";
 import { fetchRelatedSongs } from "../api/fetchRelatedSongs";
 import Loader from "../components/Loader";
